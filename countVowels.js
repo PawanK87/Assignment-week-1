@@ -26,3 +26,29 @@ function countVowels(str) {
 }
 
 module.exports = countVowels; 
+
+otherway to write the program
+
+function countVowels(str) {
+  // Convert the string to lowercase to simplify the comparison
+  str = str.toLowerCase();
+
+  //Initialize a varibale to store the count of vowels
+  let count = 0;
+
+  //Loop though each character in the string
+  for (let i = 0; i < str.length;i++) {
+    //Check if the current character is a vowel
+    if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+      //If it's a vowel, increment the count
+      count++;
+    }
+}
+
+//  Return the total count of vowels
+return count;
+}
+
+module.exports = countVowels;
+ console.log (countVowels("Celebration")
+ )
